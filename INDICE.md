@@ -8,8 +8,8 @@ Gerado por `tools/social/sincronizar_midia.py` (repositório `amuncios-venda`). 
 
 | Post | Tipo | Peças | Título | Status | Arquivos |
 |---|---|---|---|---|---|
-| 2026-10-03-10h-apresentacao | Carrossel | 9 | Carrossel de apresentação: "O que se repete, a gente programa" | ✅ agendado | [instagram/2026-10/carrosseis/2026-10-03-10h-apresentacao](instagram/2026-10/carrosseis/2026-10-03-10h-apresentacao/folha.png) |
-| 2026-10-03-18h-whatsapp-cobranca | Carrossel | 8 | Assunto do momento: "Responder cliente no WhatsApp agora custa" | ✅ agendado | [instagram/2026-10/carrosseis/2026-10-03-18h-whatsapp-cobranca](instagram/2026-10/carrosseis/2026-10-03-18h-whatsapp-cobranca/folha.png) |
+| 2026-10-03-10h-apresentacao | Carrossel | 9 | Carrossel de apresentação: "O que se repete, a gente programa" | 📣 publicado | [instagram/2026-10/carrosseis/2026-10-03-10h-apresentacao](instagram/2026-10/carrosseis/2026-10-03-10h-apresentacao/folha.png) |
+| 2026-10-03-18h-whatsapp-cobranca | Carrossel | 8 | Assunto do momento: "Responder cliente no WhatsApp agora custa" | 📣 publicado | [instagram/2026-10/carrosseis/2026-10-03-18h-whatsapp-cobranca](instagram/2026-10/carrosseis/2026-10-03-18h-whatsapp-cobranca/folha.png) |
 | 2026-10-04-10h-mitos-sistema-proprio | Carrossel | 8 | Mito × verdade: "5 mitos sobre ter um sistema próprio" | ✅ agendado | [instagram/2026-10/carrosseis/2026-10-04-10h-mitos-sistema-proprio](instagram/2026-10/carrosseis/2026-10-04-10h-mitos-sistema-proprio/folha.png) |
 | 2026-10-04-18h-apagao-5-anos | Carrossel | 9 | Assunto do momento: "O dia em que tudo caiu" (5 anos do apagão de 04/10/2021) | ✅ agendado | [instagram/2026-10/carrosseis/2026-10-04-18h-apagao-5-anos](instagram/2026-10/carrosseis/2026-10-04-18h-apagao-5-anos/folha.png) |
 | 2026-10-05-10h-sinais-passou-da-planilha | Carrossel | 9 | Software e SaaS: "Sua empresa já passou da planilha?" | ✅ agendado | [instagram/2026-10/carrosseis/2026-10-05-10h-sinais-passou-da-planilha](instagram/2026-10/carrosseis/2026-10-05-10h-sinais-passou-da-planilha/folha.png) |

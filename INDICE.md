@@ -26,7 +26,8 @@ Gerado por `tools/social/sincronizar_midia.py` (repositório `amuncios-venda`). 
 | 2026-10-06-18h-hype-mercado-livre-60min | Carrossel | 8 | Deu o que falar #02: "Pediu. Chegou. 60 min." | ✅ agendado | [instagram/2026-10/carrosseis/2026-10-06-18h-hype-mercado-livre-60min](instagram/2026-10/carrosseis/2026-10-06-18h-hype-mercado-livre-60min/folha.png) |
 | 2026-10-06-20h-reel-ache-o-erro-1 | Reel | 1 | Reel C4: "Ache o erro #1" | ✅ agendado | [instagram/2026-10/reels/2026-10-06-20h-reel-ache-o-erro-1](instagram/2026-10/reels/2026-10-06-20h-reel-ache-o-erro-1/reel.mp4) |
 | 2026-10-07-10h-perfil-empresa-google | Carrossel | 9 | Site e Google: "O que preencher pra aparecer no mapa" | ✅ agendado | [instagram/2026-10/carrosseis/2026-10-07-10h-perfil-empresa-google](instagram/2026-10/carrosseis/2026-10-07-10h-perfil-empresa-google/folha.png) |
-| 2026-10-07-12h-reel-deu-o-que-falar-mbappe | Reel | 1 | "Deu o que falar" em vídeo: "A Nike perdeu o Mbappé. 😬" (trecho real da CNN Brasil) | 🟨 aguardando ok | [instagram/2026-10/reels/2026-10-07-12h-reel-deu-o-que-falar-mbappe](instagram/2026-10/reels/2026-10-07-12h-reel-deu-o-que-falar-mbappe/reel.mp4) |
+| 2026-10-07-12h-reel-deu-o-que-falar-mbappe | Reel | 1 | "Deu o que falar" em vídeo: "A Nike perdeu o Mbappé. 😬" (trecho real da CNN Brasil) | ✅ agendado | [instagram/2026-10/reels/2026-10-07-12h-reel-deu-o-que-falar-mbappe](instagram/2026-10/reels/2026-10-07-12h-reel-deu-o-que-falar-mbappe/reel.mp4) |
+| 2026-10-07-18h-black-friday-ja-comecou | Carrossel | 8 | Assunto do momento: "A Black Friday já começou" (temporada de ofertas) | 🟨 aguardando ok | [instagram/2026-10/carrosseis/2026-10-07-18h-black-friday-ja-comecou](instagram/2026-10/carrosseis/2026-10-07-18h-black-friday-ja-comecou/folha.png) |
 | 2026-10-08-10h-impulsionar-x-gerenciador | Carrossel | 8 | Tráfego pago: "Impulsionar ou Gerenciador?" | ✅ agendado | [instagram/2026-10/carrosseis/2026-10-08-10h-impulsionar-x-gerenciador](instagram/2026-10/carrosseis/2026-10-08-10h-impulsionar-x-gerenciador/folha.png) |
 | 2026-10-08-12h-reel-sistemas-nao-conversam | Reel | 1 | Reel R3: "Seus sistemas não conversam" | ✅ agendado | [instagram/2026-10/reels/2026-10-08-12h-reel-sistemas-nao-conversam](instagram/2026-10/reels/2026-10-08-12h-reel-sistemas-nao-conversam/reel.mp4) |
 | 2026-10-09-10h-dia-das-criancas-loja | Carrossel | 8 | E-commerce: "A semana decisiva é agora" | ✅ agendado | [instagram/2026-10/carrosseis/2026-10-09-10h-dia-das-criancas-loja](instagram/2026-10/carrosseis/2026-10-09-10h-dia-das-criancas-loja/folha.png) |
@@ -61,6 +62,10 @@ Gerado por `tools/social/sincronizar_midia.py` (repositório `amuncios-venda`). 
 
 | Campanha | Criativo | Tipo | Formatos | Arquivos |
 |---|---|---|---|---|
+| 2026-10-maxilaudo-parceria-lojistas | v1-painel-do-patio | Motion | voz, 9x16 | [anuncios/2026-10-maxilaudo-parceria-lojistas/motion/v1-painel-do-patio](anuncios/2026-10-maxilaudo-parceria-lojistas/motion/v1-painel-do-patio) |
+| 2026-10-maxilaudo-parceria-lojistas | v2-ele-voltou | Motion | voz, 9x16 | [anuncios/2026-10-maxilaudo-parceria-lojistas/motion/v2-ele-voltou](anuncios/2026-10-maxilaudo-parceria-lojistas/motion/v2-ele-voltou) |
+| 2026-10-maxilaudo-parceria-lojistas | v3-perito-vai-ate-o-carro | Motion | voz, 9x16 | [anuncios/2026-10-maxilaudo-parceria-lojistas/motion/v3-perito-vai-ate-o-carro](anuncios/2026-10-maxilaudo-parceria-lojistas/motion/v3-perito-vai-ate-o-carro) |
+| 2026-10-maxilaudo-parceria-lojistas | v4-noticia | Motion | voz, 9x16 | [anuncios/2026-10-maxilaudo-parceria-lojistas/motion/v4-noticia](anuncios/2026-10-maxilaudo-parceria-lojistas/motion/v4-noticia) |
 | 2026-10-site-200-wpp | carrossel-01 | Estático | 9 cards | [anuncios/2026-10-site-200-wpp/estaticos/carrossel-01](anuncios/2026-10-site-200-wpp/estaticos/carrossel-01) |
 | 2026-10-site-200-wpp | filme-01 | Motion | 4x5, 9x16 | [anuncios/2026-10-site-200-wpp/motion/filme-01](anuncios/2026-10-site-200-wpp/motion/filme-01) |
 

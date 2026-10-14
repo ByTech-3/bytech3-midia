@@ -65,6 +65,10 @@ Gerado por `tools/social/sincronizar_midia.py` (repositório `amuncios-venda`). 
 
 | Campanha | Criativo | Tipo | Formatos | Arquivos |
 |---|---|---|---|---|
+| 2026-10-eletricista-google-wpp | carrossel-01-conta | Estático | 7 cards | [anuncios/2026-10-eletricista-google-wpp/estaticos/carrossel-01-conta](anuncios/2026-10-eletricista-google-wpp/estaticos/carrossel-01-conta) |
+| 2026-10-eletricista-google-wpp | estatico-01-pedido-so-seu | Estático | 2 cards | [anuncios/2026-10-eletricista-google-wpp/estaticos/estatico-01-pedido-so-seu](anuncios/2026-10-eletricista-google-wpp/estaticos/estatico-01-pedido-so-seu) |
+| 2026-10-eletricista-google-wpp | motion-01-disjuntor | Motion | 4x5, 9x16 | [anuncios/2026-10-eletricista-google-wpp/motion/motion-01-disjuntor](anuncios/2026-10-eletricista-google-wpp/motion/motion-01-disjuntor) |
+| 2026-10-eletricista-google-wpp | motion-02-fase-neutro-terra | Motion | 4x5, 9x16 | [anuncios/2026-10-eletricista-google-wpp/motion/motion-02-fase-neutro-terra](anuncios/2026-10-eletricista-google-wpp/motion/motion-02-fase-neutro-terra) |
 | 2026-10-maxilaudo-parceria-lojistas | v1-painel-do-patio | Motion | voz, 9x16 | [anuncios/2026-10-maxilaudo-parceria-lojistas/motion/v1-painel-do-patio](anuncios/2026-10-maxilaudo-parceria-lojistas/motion/v1-painel-do-patio) |
 | 2026-10-maxilaudo-parceria-lojistas | v2-ele-voltou | Motion | voz, 9x16 | [anuncios/2026-10-maxilaudo-parceria-lojistas/motion/v2-ele-voltou](anuncios/2026-10-maxilaudo-parceria-lojistas/motion/v2-ele-voltou) |
 | 2026-10-maxilaudo-parceria-lojistas | v3-perito-vai-ate-o-carro | Motion | voz, 9x16 | [anuncios/2026-10-maxilaudo-parceria-lojistas/motion/v3-perito-vai-ate-o-carro](anuncios/2026-10-maxilaudo-parceria-lojistas/motion/v3-perito-vai-ate-o-carro) |

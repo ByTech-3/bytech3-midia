@@ -97,6 +97,9 @@ Gerado por `tools/social/sincronizar_midia.py` (repositório `amuncios-venda`). 
 | 2026-10-30-18h-estatico-cliente-esquece | Carrossel | 1 | "Seu cliente salvou seu contato? Ele vai esquecer." | 🟨 aguardando ok | [instagram/2026-10/carrosseis/2026-10-30-18h-estatico-cliente-esquece](instagram/2026-10/carrosseis/2026-10-30-18h-estatico-cliente-esquece/folha.png) |
 | 2026-10-30-20h-reel-cartao-aprovado | Reel | 1 | O que acontece quando você aprova uma compra no cartão | 🟨 aguardando ok | [instagram/2026-10/reels/2026-10-30-20h-reel-cartao-aprovado](instagram/2026-10/reels/2026-10-30-20h-reel-cartao-aprovado/reel.mp4) |
 | 2026-10-31-10h-fantasmas-da-operacao | Carrossel | 8 | Consultoria: "Os fantasmas da sua operação" | ✅ agendado | [instagram/2026-10/carrosseis/2026-10-31-10h-fantasmas-da-operacao](instagram/2026-10/carrosseis/2026-10-31-10h-fantasmas-da-operacao/folha.png) |
+| 2026-10-31-12h-video-sustos-do-dono | Reel | 1 | Vídeo dinâmico: "Os sustos que todo dono de negócio já levou" | 🟨 aguardando ok | [instagram/2026-10/reels/2026-10-31-12h-video-sustos-do-dono](instagram/2026-10/reels/2026-10-31-12h-video-sustos-do-dono/reel.mp4) |
+| 2026-10-31-18h-estatico-casa-assombrada | Carrossel | 1 | "Na sua empresa, as coisas somem sozinhas?" | 🟨 aguardando ok | [instagram/2026-10/carrosseis/2026-10-31-18h-estatico-casa-assombrada](instagram/2026-10/carrosseis/2026-10-31-18h-estatico-casa-assombrada/folha.png) |
+| 2026-10-31-20h-reel-o-que-acontece-no-escuro | Reel | 1 | O que acontece na sua loja quando você apaga a luz? | 🟨 aguardando ok | [instagram/2026-10/reels/2026-10-31-20h-reel-o-que-acontece-no-escuro](instagram/2026-10/reels/2026-10-31-20h-reel-o-que-acontece-no-escuro/reel.mp4) |
 
 ## Anúncios (tráfego pago)
 

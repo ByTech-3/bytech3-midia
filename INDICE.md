@@ -100,6 +100,10 @@ Gerado por `tools/social/sincronizar_midia.py` (repositório `amuncios-venda`). 
 | 2026-10-31-12h-video-sustos-do-dono | Reel | 1 | Vídeo dinâmico: "Os sustos que todo dono de negócio já levou" | 🟨 aguardando ok | [instagram/2026-10/reels/2026-10-31-12h-video-sustos-do-dono](instagram/2026-10/reels/2026-10-31-12h-video-sustos-do-dono/reel.mp4) |
 | 2026-10-31-18h-estatico-casa-assombrada | Carrossel | 1 | "Na sua empresa, as coisas somem sozinhas?" | 🟨 aguardando ok | [instagram/2026-10/carrosseis/2026-10-31-18h-estatico-casa-assombrada](instagram/2026-10/carrosseis/2026-10-31-18h-estatico-casa-assombrada/folha.png) |
 | 2026-10-31-20h-reel-o-que-acontece-no-escuro | Reel | 1 | O que acontece na sua loja quando você apaga a luz? | 🟨 aguardando ok | [instagram/2026-10/reels/2026-10-31-20h-reel-o-que-acontece-no-escuro](instagram/2026-10/reels/2026-10-31-20h-reel-o-que-acontece-no-escuro/reel.mp4) |
+| 2026-11-01-10h-novembro-chegou | Carrossel | 9 | Carrossel "Novembro chegou: o checklist do mês para quem tem negócio" | 🟨 aguardando ok | [instagram/2026-11/carrosseis/2026-11-01-10h-novembro-chegou](instagram/2026-11/carrosseis/2026-11-01-10h-novembro-chegou/folha.png) |
+| 2026-11-01-12h-video-faltam-26-dias | Reel | 1 | Vídeo dinâmico: "Faltam 26 dias pra Black Friday" | 🟨 aguardando ok | [instagram/2026-11/reels/2026-11-01-12h-video-faltam-26-dias](instagram/2026-11/reels/2026-11-01-12h-video-faltam-26-dias/reel.mp4) |
+| 2026-11-01-18h-estatico-nfse-comeca-hoje | Carrossel | 1 | "Começou hoje: nota de serviço no padrão nacional." | 🟨 aguardando ok | [instagram/2026-11/carrosseis/2026-11-01-18h-estatico-nfse-comeca-hoje](instagram/2026-11/carrosseis/2026-11-01-18h-estatico-nfse-comeca-hoje/folha.png) |
+| 2026-11-01-20h-reel-domingo-a-noite | Reel | 1 | Domingo à noite e a cabeça já está na segunda? | 🟨 aguardando ok | [instagram/2026-11/reels/2026-11-01-20h-reel-domingo-a-noite](instagram/2026-11/reels/2026-11-01-20h-reel-domingo-a-noite/reel.mp4) |
 
 ## Anúncios (tráfego pago)
 

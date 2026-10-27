@@ -104,6 +104,10 @@ Gerado por `tools/social/sincronizar_midia.py` (repositório `amuncios-venda`). 
 | 2026-11-01-12h-video-faltam-26-dias | Reel | 1 | Vídeo dinâmico: "Faltam 26 dias pra Black Friday" | 🟨 aguardando ok | [instagram/2026-11/reels/2026-11-01-12h-video-faltam-26-dias](instagram/2026-11/reels/2026-11-01-12h-video-faltam-26-dias/reel.mp4) |
 | 2026-11-01-18h-estatico-nfse-comeca-hoje | Carrossel | 1 | "Começou hoje: nota de serviço no padrão nacional." | 🟨 aguardando ok | [instagram/2026-11/carrosseis/2026-11-01-18h-estatico-nfse-comeca-hoje](instagram/2026-11/carrosseis/2026-11-01-18h-estatico-nfse-comeca-hoje/folha.png) |
 | 2026-11-01-20h-reel-domingo-a-noite | Reel | 1 | Domingo à noite e a cabeça já está na segunda? | 🟨 aguardando ok | [instagram/2026-11/reels/2026-11-01-20h-reel-domingo-a-noite](instagram/2026-11/reels/2026-11-01-20h-reel-domingo-a-noite/reel.mp4) |
+| 2026-11-02-10h-app-ou-marketplace | Carrossel | 8 | Carrossel "App próprio ou só o marketplace? Quando vale ter o seu" | 🟨 aguardando ok | [instagram/2026-11/carrosseis/2026-11-02-10h-app-ou-marketplace](instagram/2026-11/carrosseis/2026-11-02-10h-app-ou-marketplace/folha.png) |
+| 2026-11-02-12h-video-cliente-no-celular | Reel | 1 | Vídeo dinâmico: "Feriado. Seu cliente tá no celular. E a sua loja?" | 🟨 aguardando ok | [instagram/2026-11/reels/2026-11-02-12h-video-cliente-no-celular](instagram/2026-11/reels/2026-11-02-12h-video-cliente-no-celular/reel.mp4) |
+| 2026-11-02-18h-estatico-digitou-tres-vezes | Carrossel | 1 | "Seu cliente pediu 1 vez. Você digitou 3." | 🟨 aguardando ok | [instagram/2026-11/carrosseis/2026-11-02-18h-estatico-digitou-tres-vezes](instagram/2026-11/carrosseis/2026-11-02-18h-estatico-digitou-tres-vezes/folha.png) |
+| 2026-11-02-20h-reel-por-que-o-site-cai | Reel | 1 | Por que o site cai na Black Friday? | 🟨 aguardando ok | [instagram/2026-11/reels/2026-11-02-20h-reel-por-que-o-site-cai](instagram/2026-11/reels/2026-11-02-20h-reel-por-que-o-site-cai/reel.mp4) |
 
 ## Anúncios (tráfego pago)
 

@@ -108,6 +108,8 @@ Gerado por `tools/social/sincronizar_midia.py` (repositório `amuncios-venda`). 
 | 2026-11-02-12h-video-cliente-no-celular | Reel | 1 | Vídeo dinâmico: "Feriado. Seu cliente tá no celular. E a sua loja?" | 🟨 aguardando ok | [instagram/2026-11/reels/2026-11-02-12h-video-cliente-no-celular](instagram/2026-11/reels/2026-11-02-12h-video-cliente-no-celular/reel.mp4) |
 | 2026-11-02-18h-estatico-digitou-tres-vezes | Carrossel | 1 | "Seu cliente pediu 1 vez. Você digitou 3." | 🟨 aguardando ok | [instagram/2026-11/carrosseis/2026-11-02-18h-estatico-digitou-tres-vezes](instagram/2026-11/carrosseis/2026-11-02-18h-estatico-digitou-tres-vezes/folha.png) |
 | 2026-11-02-20h-reel-por-que-o-site-cai | Reel | 1 | Por que o site cai na Black Friday? | 🟨 aguardando ok | [instagram/2026-11/reels/2026-11-02-20h-reel-por-que-o-site-cai](instagram/2026-11/reels/2026-11-02-20h-reel-por-que-o-site-cai/reel.mp4) |
+| 2026-11-03-10h-agenda-sozinha | Carrossel | 8 | Carrossel "Seu cliente esqueceu o horário? A agenda que se organiza sozinha" | 🟨 aguardando ok | [instagram/2026-11/carrosseis/2026-11-03-10h-agenda-sozinha](instagram/2026-11/carrosseis/2026-11-03-10h-agenda-sozinha/folha.png) |
+| 2026-11-03-18h-estatico-pix-duas-horas | Carrossel | 1 | "Seu cliente pagou o Pix. Você viu 2 horas depois." | 🟨 aguardando ok | [instagram/2026-11/carrosseis/2026-11-03-18h-estatico-pix-duas-horas](instagram/2026-11/carrosseis/2026-11-03-18h-estatico-pix-duas-horas/folha.png) |
 
 ## Anúncios (tráfego pago)
 

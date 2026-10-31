@@ -110,6 +110,8 @@ Gerado por `tools/social/sincronizar_midia.py` (repositório `amuncios-venda`). 
 | 2026-11-02-20h-reel-por-que-o-site-cai | Reel | 1 | Por que o site cai na Black Friday? | 🟨 aguardando ok | [instagram/2026-11/reels/2026-11-02-20h-reel-por-que-o-site-cai](instagram/2026-11/reels/2026-11-02-20h-reel-por-que-o-site-cai/reel.mp4) |
 | 2026-11-03-10h-agenda-sozinha | Carrossel | 8 | Carrossel "Seu cliente esqueceu o horário? A agenda que se organiza sozinha" | 🟨 aguardando ok | [instagram/2026-11/carrosseis/2026-11-03-10h-agenda-sozinha](instagram/2026-11/carrosseis/2026-11-03-10h-agenda-sozinha/folha.png) |
 | 2026-11-03-18h-estatico-pix-duas-horas | Carrossel | 1 | "Seu cliente pagou o Pix. Você viu 2 horas depois." | 🟨 aguardando ok | [instagram/2026-11/carrosseis/2026-11-03-18h-estatico-pix-duas-horas](instagram/2026-11/carrosseis/2026-11-03-18h-estatico-pix-duas-horas/folha.png) |
+| 2026-11-04-10h-computador-pifou | Carrossel | 8 | Carrossel "Se o computador pifasse hoje… o que a sua loja perderia junto?" | 🟨 aguardando ok | [instagram/2026-11/carrosseis/2026-11-04-10h-computador-pifou](instagram/2026-11/carrosseis/2026-11-04-10h-computador-pifou/folha.png) |
+| 2026-11-04-18h-estatico-senha-foi-junto | Carrossel | 1 | "Seu funcionário saiu. A senha do Instagram foi junto?" | 🟨 aguardando ok | [instagram/2026-11/carrosseis/2026-11-04-18h-estatico-senha-foi-junto](instagram/2026-11/carrosseis/2026-11-04-18h-estatico-senha-foi-junto/folha.png) |
 
 ## Anúncios (tráfego pago)
 

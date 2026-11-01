@@ -112,6 +112,8 @@ Gerado por `tools/social/sincronizar_midia.py` (repositório `amuncios-venda`). 
 | 2026-11-03-18h-estatico-pix-duas-horas | Carrossel | 1 | "Seu cliente pagou o Pix. Você viu 2 horas depois." | 🟨 aguardando ok | [instagram/2026-11/carrosseis/2026-11-03-18h-estatico-pix-duas-horas](instagram/2026-11/carrosseis/2026-11-03-18h-estatico-pix-duas-horas/folha.png) |
 | 2026-11-04-10h-computador-pifou | Carrossel | 8 | Carrossel "Se o computador pifasse hoje… o que a sua loja perderia junto?" | 🟨 aguardando ok | [instagram/2026-11/carrosseis/2026-11-04-10h-computador-pifou](instagram/2026-11/carrosseis/2026-11-04-10h-computador-pifou/folha.png) |
 | 2026-11-04-18h-estatico-senha-foi-junto | Carrossel | 1 | "Seu funcionário saiu. A senha do Instagram foi junto?" | 🟨 aguardando ok | [instagram/2026-11/carrosseis/2026-11-04-18h-estatico-senha-foi-junto](instagram/2026-11/carrosseis/2026-11-04-18h-estatico-senha-foi-junto/folha.png) |
+| 2026-11-05-10h-whatsapp-business-recursos | Carrossel | 8 | Carrossel "Seu Zap tem 6 recursos grátis" (WhatsApp Business) | 🟨 aguardando ok | [instagram/2026-11/carrosseis/2026-11-05-10h-whatsapp-business-recursos](instagram/2026-11/carrosseis/2026-11-05-10h-whatsapp-business-recursos/folha.png) |
+| 2026-11-05-18h-estatico-site-2021 | Carrossel | 1 | "Seu site ainda diz © 2021?" | 🟨 aguardando ok | [instagram/2026-11/carrosseis/2026-11-05-18h-estatico-site-2021](instagram/2026-11/carrosseis/2026-11-05-18h-estatico-site-2021/folha.png) |
 
 ## Anúncios (tráfego pago)
 

@@ -114,6 +114,8 @@ Gerado por `tools/social/sincronizar_midia.py` (repositório `amuncios-venda`). 
 | 2026-11-04-18h-estatico-senha-foi-junto | Carrossel | 1 | "Seu funcionário saiu. A senha do Instagram foi junto?" | 🟨 aguardando ok | [instagram/2026-11/carrosseis/2026-11-04-18h-estatico-senha-foi-junto](instagram/2026-11/carrosseis/2026-11-04-18h-estatico-senha-foi-junto/folha.png) |
 | 2026-11-05-10h-whatsapp-business-recursos | Carrossel | 8 | Carrossel "Seu Zap tem 6 recursos grátis" (WhatsApp Business) | 🟨 aguardando ok | [instagram/2026-11/carrosseis/2026-11-05-10h-whatsapp-business-recursos](instagram/2026-11/carrosseis/2026-11-05-10h-whatsapp-business-recursos/folha.png) |
 | 2026-11-05-18h-estatico-site-2021 | Carrossel | 1 | "Seu site ainda diz © 2021?" | 🟨 aguardando ok | [instagram/2026-11/carrosseis/2026-11-05-18h-estatico-site-2021](instagram/2026-11/carrosseis/2026-11-05-18h-estatico-site-2021/folha.png) |
+| 2026-11-06-10h-cliente-sumiu | Carrossel | 8 | Carrossel "Seu cliente sumiu? 6 jeitos de trazer ele de volta (sem virar spam)" | 🟨 aguardando ok | [instagram/2026-11/carrosseis/2026-11-06-10h-cliente-sumiu](instagram/2026-11/carrosseis/2026-11-06-10h-cliente-sumiu/folha.png) |
+| 2026-11-06-18h-estatico-orcamento-caderno | Carrossel | 1 | "Ainda manda orçamento em foto do caderno?" | 🟨 aguardando ok | [instagram/2026-11/carrosseis/2026-11-06-18h-estatico-orcamento-caderno](instagram/2026-11/carrosseis/2026-11-06-18h-estatico-orcamento-caderno/folha.png) |
 
 ## Anúncios (tráfego pago)
 

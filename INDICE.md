@@ -116,6 +116,8 @@ Gerado por `tools/social/sincronizar_midia.py` (repositório `amuncios-venda`). 
 | 2026-11-05-18h-estatico-site-2021 | Carrossel | 1 | "Seu site ainda diz © 2021?" | 🟨 aguardando ok | [instagram/2026-11/carrosseis/2026-11-05-18h-estatico-site-2021](instagram/2026-11/carrosseis/2026-11-05-18h-estatico-site-2021/folha.png) |
 | 2026-11-06-10h-cliente-sumiu | Carrossel | 8 | Carrossel "Seu cliente sumiu? 6 jeitos de trazer ele de volta (sem virar spam)" | 🟨 aguardando ok | [instagram/2026-11/carrosseis/2026-11-06-10h-cliente-sumiu](instagram/2026-11/carrosseis/2026-11-06-10h-cliente-sumiu/folha.png) |
 | 2026-11-06-18h-estatico-orcamento-caderno | Carrossel | 1 | "Ainda manda orçamento em foto do caderno?" | 🟨 aguardando ok | [instagram/2026-11/carrosseis/2026-11-06-18h-estatico-orcamento-caderno](instagram/2026-11/carrosseis/2026-11-06-18h-estatico-orcamento-caderno/folha.png) |
+| 2026-11-07-10h-como-o-app-sabe | Carrossel | 8 | Carrossel "Como o app sabe onde está o seu pedido? 👀" | 🟨 aguardando ok | [instagram/2026-11/carrosseis/2026-11-07-10h-como-o-app-sabe](instagram/2026-11/carrosseis/2026-11-07-10h-como-o-app-sabe/folha.png) |
+| 2026-11-07-18h-estatico-feriado-google | Carrossel | 1 | "Feriado chegando. E o seu horário no Google?" | 🟨 aguardando ok | [instagram/2026-11/carrosseis/2026-11-07-18h-estatico-feriado-google](instagram/2026-11/carrosseis/2026-11-07-18h-estatico-feriado-google/folha.png) |
 
 ## Anúncios (tráfego pago)
 

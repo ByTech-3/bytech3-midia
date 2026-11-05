@@ -158,6 +158,15 @@ td strong { font-weight: 700; }
 .passos li { display: grid; grid-template-columns: 44px 1fr; gap: 14px; align-items: start; }
 .passos li::before { counter-increment: p; content: counter(p); font: 400 26px/44px var(--f-display); color: var(--mel); background: var(--cacau); width: 44px; height: 44px; border-radius: 50%; text-align: center; }
 .passos b { font: 800 18px var(--f-rotulo); text-transform: uppercase; letter-spacing: 0.04em; display: block; }
+.motivos { list-style: none; padding: 0; margin: 18px 0 22px; display: grid; gap: 10px; max-width: 60ch; }
+.motivos li { padding-left: 22px; position: relative; }
+.motivos li::before { content: ""; position: absolute; left: 0; top: 0.55em; width: 10px; height: 10px; border-radius: 50%; background: var(--beijo); }
+.vitrine { display: grid; gap: 14px; min-width: 0; }
+.vitrine > div { border-radius: 16px; display: grid; place-items: center; padding: clamp(24px, 5vw, 48px); }
+.vitrine-claro { background: var(--creme); }
+.vitrine-escuro { background: var(--chocolate); }
+.vitrine img { width: min(380px, 90%); height: auto; }
+.logos-dl { display: flex; flex-wrap: wrap; gap: 10px; }
 .pend-lista { columns: 2 320px; column-gap: 32px; padding-left: 20px; margin: 0; }
 .pend-lista li { break-inside: avoid; margin-bottom: 10px; }
 footer { background: var(--chocolate); color: rgba(255, 248, 236, 0.75); padding-block: 36px; font-size: 14px; }
@@ -195,10 +204,6 @@ footer .wrap { display: flex; flex-wrap: wrap; gap: 12px 28px; justify-content: 
       <div>
         <div class="grupo-rotulo" id="lblSabor">Sabor</div>
         <div class="chips" id="chips" role="group" aria-labelledby="lblSabor"></div>
-      </div>
-      <div>
-        <div class="grupo-rotulo" id="lblNome">Nome</div>
-        <div class="seg" id="seg" role="group" aria-labelledby="lblNome"></div>
       </div>
       <div class="acoes">
         <button class="btn" id="btVerso" type="button"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12a9 9 0 0 1 15.5-6.2L21 8M21 3v5h-5M21 12a9 9 0 0 1-15.5 6.2L3 16M3 21v-5h5"/></svg>Ver o verso</button>
@@ -240,20 +245,33 @@ footer .wrap { display: flex; flex-wrap: wrap; gap: 12px 28px; justify-content: 
             <tr><td><strong>A bolinha vermelha no lugar do “o”</strong></td><td><span class="peso"><b class="on"></b><b class="on"></b><b class="on"></b><b class="on"></b><b></b></span></td><td>O “o” de “bom” é uma bola vermelha</td><td>Mantida como o “beijo” da marca, com brilho</td></tr>
             <tr><td><strong>Rótulo creme com cantos chanfrados</strong></td><td><span class="peso"><b class="on"></b><b class="on"></b><b class="on"></b><b></b><b></b></span></td><td>Creme com sequilhos em traço, ilustração do ingrediente</td><td>Mesmo formato e mesma ordem de leitura; ilustração nova com dois sequilhos</td></tr>
             <tr><td><strong>“SEQUILHOS” em letra grande</strong></td><td><span class="peso"><b class="on"></b><b class="on"></b><b class="on"></b><b></b><b></b></span></td><td>Condensada, na cor do sabor</td><td>Igual, maior e mais legível</td></tr>
-            <tr><td><strong>Nome da marca</strong></td><td><span class="peso"><b class="on"></b><b class="on"></b><b></b><b></b><b></b></span></td><td>Bom Beijo</td><td>Troca obrigatória. Rota recomendada: Bom Xodó, que mantém o “bom” e o ritmo de três sílabas</td></tr>
+            <tr><td><strong>Nome da marca</strong></td><td><span class="peso"><b class="on"></b><b class="on"></b><b></b><b></b><b></b></span></td><td>Bom Beijo</td><td>Troca obrigatória: <strong>Bom Xodó</strong>, que mantém o “bom”, a bolinha e o ritmo de três sílabas</td></tr>
           </tbody>
         </table>
       </div>
     </div>
   </section>
 
-  <section class="bloco gutter" id="nomes" style="background:#fff">
-    <div class="wrap">
-      <span class="eyebrow">Três caminhos de nome</span>
-      <h2>Um nome que soa como carinho, com a bolinha vermelha no centro</h2>
-      <p class="lead">As três rotas usam o mesmo sistema visual e mudam só o grau de parentesco com o nome antigo. Quanto mais parecido, mais fácil para o cliente e mais importante a liberação por escrito da Delos e a busca no INPI.</p>
-      <div class="rotas" id="rotas"></div>
-      <p style="margin-top:22px;font-size:15px;color:var(--tinta-2)">Os três nomes precisam de busca de anterioridade no INPI (classe 30, biscoitos) antes da escolha final. A disponibilidade de registro não foi verificada nesta proposta.</p>
+  <section class="bloco gutter" id="marca" style="background:#fff">
+    <div class="wrap duas">
+      <div>
+        <span class="eyebrow">A marca nova</span>
+        <h2>Bom Xodó, o queridinho da casa</h2>
+        <p class="lead">Xodó é como o brasileiro chama o preferido, aquele que todo mundo quer por perto. O nome guarda o “bom” do letreiro antigo, a bolinha vermelha no mesmo “o” e o mesmo ritmo de três sílabas: bom bei-jo, bom xo-dó.</p>
+        <ul class="motivos">
+          <li><strong>Reconhecido de longe.</strong> Na gôndola, o “bom” amarelo com a bolinha vermelha é lido como o mesmo produto de sempre.</li>
+          <li><strong>Fácil de pedir.</strong> Curto, carinhoso e sem dúvida de grafia, no balcão ou no WhatsApp.</li>
+          <li><strong>Pronto para crescer.</strong> O mesmo letreiro serve para sabores novos e outras linhas da Velomed.</li>
+        </ul>
+        <div class="logos-dl">
+          <a class="dl" id="dlLogoPdf" href="img/logos/bom-xodo.pdf" target="_blank" rel="noopener" style="--c:var(--mel)"><i></i><span>Logo · PDF vetorial CMYK</span><small>PDF</small></a>
+          <a class="dl" id="dlLogoSvg" href="img/logos/bom-xodo.svg" target="_blank" rel="noopener" style="--c:var(--beijo)"><i></i><span>Logo · SVG para web</span><small>SVG</small></a>
+        </div>
+      </div>
+      <div class="vitrine">
+        <div class="vitrine-claro"><img src="img/logos/bom-xodo.svg" alt="Logotipo Bom Xodó" width="380" height="240" loading="lazy"></div>
+        <div class="vitrine-escuro"><img src="img/logos/bom-xodo-com-halo.svg" alt="Logotipo Bom Xodó com contorno creme, para fundos escuros" width="380" height="240" loading="lazy"></div>
+      </div>
     </div>
   </section>
 
@@ -337,7 +355,7 @@ footer .wrap { display: flex; flex-wrap: wrap; gap: 12px 28px; justify-content: 
           </tbody>
         </table>
       </div>
-      <h3 style="margin-top:30px">Arquivos de impressão · rota Bom Xodó</h3>
+      <h3 style="margin-top:30px">Arquivos de impressão · Bom Xodó</h3>
       <div class="downloads" id="downloads"></div>
       <div class="aviso"><strong>Prova para aprovação.</strong> Os campos em magenta (CNPJ, razão social, endereço da Delos, licença sanitária, EAN) e os dados de ingredientes e tabela precisam vir da Delos antes da impressão. No site da Delos, Amendoim, Café e Leite Condensado aparecem com a mesma tabela e a mesma lista de ingredientes, e a lista não cita amendoim nem café.</div>
 
@@ -376,7 +394,7 @@ footer .wrap { display: flex; flex-wrap: wrap; gap: 12px 28px; justify-content: 
       <span class="eyebrow">Antes de ir para a gráfica</span>
       <h2>O que falta decidir ou receber</h2>
       <ul class="pend-lista">
-        <li><strong>Escolher o nome</strong> entre as três rotas, depois da busca no INPI.</li>
+        <li><strong>Registro do nome:</strong> busca de anterioridade de “Bom Xodó” no INPI (classe 30, biscoitos) e pedido de registro em nome da Velomed.</li>
         <li><strong>Autorização da Delos</strong> por escrito para manter cores, letreiro e bolinha, e para citar ou não o nome antigo na comunicação.</li>
         <li><strong>Ficha técnica oficial</strong> de cada sabor: ingredientes, alérgicos e tabela. No amendoim, se há amendoim na receita, o texto muda para “CONTÉM AMENDOIM”.</li>
         <li><strong>Transgênicos por sabor:</strong> o site não cita milho transgênico no maracujá. O rótulo traz o “T” em todos até a Delos confirmar.</li>
@@ -449,8 +467,11 @@ const CHECK = [
 const $ = (s) => document.querySelector(s);
 const estado = { sabor: 'coco', rota: 'bom-xodo', linha: false, lado: 'frente' };
 const tex = (rota, sabor, lado) => `tex/${rota}/${sabor}-${lado}.webp`;
-const SITE = 'https://velomed-sequilhos-bytech-3-projects.vercel.app/';
-const PDF_BASE = /vercel\.app$|^localhost$|^127\./.test(location.hostname) ? 'impressao/' : SITE + 'impressao/';
+const SITE = 'https://sequilhos-bom-xodo.vercel.app/';
+const BASE = /vercel\.app$|^localhost$|^127\./.test(location.hostname) ? '' : SITE;
+const PDF_BASE = BASE + 'impressao/';
+$('#dlLogoPdf').href = BASE + 'img/logos/bom-xodo.pdf';
+$('#dlLogoSvg').href = BASE + 'img/logos/bom-xodo.svg';
 
 // ----- interface
 const chips = $('#chips');
@@ -462,7 +483,7 @@ SABORES.forEach((s) => {
   chips.appendChild(b);
 });
 const seg = $('#seg');
-ROTAS.forEach((r) => {
+if (seg) ROTAS.forEach((r) => {
   const b = document.createElement('button');
   b.type = 'button'; b.dataset.id = r.id; b.setAttribute('aria-pressed', r.id === estado.rota);
   b.innerHTML = `${r.nome}${r.rec ? '<small>recomendado</small>' : '<small>&nbsp;</small>'}`;
@@ -471,7 +492,7 @@ ROTAS.forEach((r) => {
 });
 
 const rotas = $('#rotas');
-ROTAS.forEach((r) => {
+if (rotas) ROTAS.forEach((r) => {
   const el = document.createElement('article');
   el.className = 'rota' + (r.rec ? ' rec' : '');
   el.innerHTML = `${r.rec ? '<span class="selo-rec rec-tag">Recomendado</span>' : ''}

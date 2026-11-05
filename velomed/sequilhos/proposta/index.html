@@ -9,7 +9,7 @@
 <meta name="description" content="Proposta de marca para os sequilhos sem glúten e sem lactose da Velomed: estudo, três nomes, rótulos prontos para a gráfica e visualização 3D.">
 <meta property="og:title" content="Sequilhos Bom Xodó · proposta de marca Velomed">
 <meta property="og:description" content="O sequilho que o cliente já conhece, com nome novo e a mesma receita. Gire o pacote em 3D, veja os 6 sabores e a ficha para a gráfica.">
-<meta property="og:image" content="img/og.jpg">
+<meta property="og:image" content="https://velomed-sequilhos-bytech-3-projects.vercel.app/img/og.jpg">
 <meta property="og:type" content="website">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -456,7 +456,8 @@ const CHECK = [
 const $ = (s) => document.querySelector(s);
 const estado = { sabor: 'coco', rota: 'bom-xodo', linha: false, lado: 'frente' };
 const tex = (rota, sabor, lado) => `tex/${rota}/${sabor}-${lado}.webp`;
-const PDF_BASE = 'impressao/';
+const SITE = 'https://velomed-sequilhos-bytech-3-projects.vercel.app/';
+const PDF_BASE = /vercel\.app$|^localhost$|^127\./.test(location.hostname) ? 'impressao/' : SITE + 'impressao/';
 
 // ----- interface
 const chips = $('#chips');

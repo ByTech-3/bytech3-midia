@@ -449,7 +449,8 @@ const CHECK = [
 const $ = (s) => document.querySelector(s);
 const estado = { sabor: 'coco', rota: 'bom-xodo', linha: false, lado: 'frente' };
 const tex = (rota, sabor, lado) => `tex/${rota}/${sabor}-${lado}.webp`;
-const PDF_BASE = 'impressao/';
+const SITE = 'https://velomed-sequilhos-bytech-3-projects.vercel.app/';
+const PDF_BASE = /vercel\.app$|^localhost$|^127\./.test(location.hostname) ? 'impressao/' : SITE + 'impressao/';
 
 // ----- interface
 const chips = $('#chips');

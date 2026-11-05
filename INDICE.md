@@ -120,6 +120,8 @@ Gerado por `tools/social/sincronizar_midia.py` (repositório `amuncios-venda`). 
 | 2026-11-07-18h-estatico-feriado-google | Carrossel | 1 | "Feriado chegando. E o seu horário no Google?" | 🟨 aguardando ok | [instagram/2026-11/carrosseis/2026-11-07-18h-estatico-feriado-google](instagram/2026-11/carrosseis/2026-11-07-18h-estatico-feriado-google/folha.png) |
 | 2026-11-08-10h-mito-sistema-loja-pequena | Carrossel | 7 | Carrossel "Mito ou verdade: sistema é só para empresa grande?" | 🟨 aguardando ok | [instagram/2026-11/carrosseis/2026-11-08-10h-mito-sistema-loja-pequena](instagram/2026-11/carrosseis/2026-11-08-10h-mito-sistema-loja-pequena/folha.png) |
 | 2026-11-08-20h-reel-senha-antiga | Reel | 1 | Por que o app nunca te mostra a sua senha antiga? | 🟨 aguardando ok | [instagram/2026-11/reels/2026-11-08-20h-reel-senha-antiga](instagram/2026-11/reels/2026-11-08-20h-reel-senha-antiga/reel.mp4) |
+| 2026-11-09-10h-estatico-estoque-diz-5 | Carrossel | 1 | "O sistema diz 5. A prateleira diz 0." | 🟨 aguardando ok | [instagram/2026-11/carrosseis/2026-11-09-10h-estatico-estoque-diz-5](instagram/2026-11/carrosseis/2026-11-09-10h-estatico-estoque-diz-5/folha.png) |
+| 2026-11-09-18h-black-friday-teste-agora | Carrossel | 7 | Carrossel "Black Friday em 18 dias. Sua loja aguenta?" | 🟨 aguardando ok | [instagram/2026-11/carrosseis/2026-11-09-18h-black-friday-teste-agora](instagram/2026-11/carrosseis/2026-11-09-18h-black-friday-teste-agora/folha.png) |
 
 ## Anúncios (tráfego pago)
 

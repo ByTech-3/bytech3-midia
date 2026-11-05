@@ -109,47 +109,41 @@ function filmTextures() {
   const [cc, cx] = mk(); const [tc, tx] = mk(); const [ac, ax] = mk(); const [rc, rx] = mk();
   cx.fillStyle = '#ffffff'; cx.fillRect(0, 0, w, h);
   tx.fillStyle = '#ffffff'; tx.fillRect(0, 0, w, h);          // transmissão total (filme limpo)
-  rx.fillStyle = '#2a2a2a'; rx.fillRect(0, 0, w, h);          // rugosidade baixa
+  rx.fillStyle = '#0d0d0d'; rx.fillRect(0, 0, w, h);          // filme liso e brilhante
   ax.fillStyle = '#ffffff'; ax.fillRect(0, 0, w, h);
   const sealPx = h * S, band = h * 0.17;
-  const rnd = rng(5);
-  // faixas impressas (branco opaco com sequilhos em traço), em cima e embaixo
+    // faixas impressas: sequilhos em traço branco sobre o filme transparente (como o saco atual), em cima e embaixo
   for (const top of [true, false]) {
     const y0 = top ? 0 : h - band;
-    tx.save(); cx.save();
-    tx.beginPath(); cx.beginPath();
-    // borda ondulada da faixa
     const edge = (x) => (top ? band : h - band) + Math.sin(x / w * Math.PI * 2 + (top ? 0 : 2)) * 14 * (top ? 1 : -1);
-    for (const g of [tx, cx]) {
+    for (const [g, cor] of [[cx, '#fffdf8'], [tx, '#000000']]) {
+      g.save(); g.beginPath();
       g.moveTo(0, top ? 0 : h);
       for (let x = 0; x <= w; x += 16) g.lineTo(x, edge(x));
-      g.lineTo(w, top ? 0 : h); g.closePath();
-    }
-    tx.fillStyle = '#1c1c1c'; tx.fill();
-    cx.fillStyle = '#fbf8f2'; cx.fill();
-    cx.clip();
-    cx.strokeStyle = '#e4dccd'; cx.lineWidth = 3;
-    for (let yy = y0 - 40; yy < y0 + band + 40; yy += 62) for (let xx = -40; xx < w + 40; xx += 62) {
-      const x = xx + (Math.floor(yy / 62) % 2 ? 31 : 0) + (rnd() - 0.5) * 14, y = yy + (rnd() - 0.5) * 14, r = 19 + rnd() * 4;
-      cx.beginPath(); cx.arc(x, y, r, 0, Math.PI * 2); cx.stroke();
-      const a = rnd() * Math.PI;
-      for (const k of [-1, 0, 1]) {
-        const ox = Math.cos(a + Math.PI / 2) * k * r * 0.38, oy = Math.sin(a + Math.PI / 2) * k * r * 0.38, l = r * (k ? 0.45 : 0.6);
-        cx.beginPath(); cx.moveTo(x + ox - Math.cos(a) * l, y + oy - Math.sin(a) * l); cx.lineTo(x + ox + Math.cos(a) * l, y + oy + Math.sin(a) * l); cx.stroke();
+      g.lineTo(w, top ? 0 : h); g.closePath(); g.clip();
+      g.strokeStyle = cor; g.lineWidth = 5; g.lineCap = 'round';
+      const r2 = rng(top ? 5 : 9);
+      for (let yy = y0 - 40; yy < y0 + band + 40; yy += 58) for (let xx = -40; xx < w + 40; xx += 58) {
+        const x = xx + (Math.floor(yy / 58) % 2 ? 29 : 0) + (r2() - 0.5) * 12, y = yy + (r2() - 0.5) * 12, r = 18 + r2() * 4;
+        g.beginPath(); g.arc(x, y, r, 0, Math.PI * 2); g.stroke();
+        const a2 = r2() * Math.PI;
+        for (const k of [-1, 0, 1]) {
+          const ox = Math.cos(a2 + Math.PI / 2) * k * r * 0.38, oy = Math.sin(a2 + Math.PI / 2) * k * r * 0.38, l = r * (k ? 0.45 : 0.6);
+          g.beginPath(); g.moveTo(x + ox - Math.cos(a2) * l, y + oy - Math.sin(a2) * l); g.lineTo(x + ox + Math.cos(a2) * l, y + oy + Math.sin(a2) * l); g.stroke();
+        }
       }
+      g.restore();
+      // filete marrom acompanhando a borda da faixa
+      g.strokeStyle = g === cx ? '#6b4226' : '#000000'; g.lineWidth = 7; g.beginPath();
+      for (let x = 0; x <= w; x += 16) { const y = edge(x) + (top ? -10 : 10); x ? g.lineTo(x, y) : g.moveTo(x, y); }
+      g.stroke();
     }
-    cx.restore();
-    // filete marrom acompanhando a borda (como no saco atual)
-    cx.strokeStyle = '#6b4226'; cx.lineWidth = 7; cx.beginPath();
-    for (let x = 0; x <= w; x += 16) { const y = edge(x) + (top ? -10 : 10); x ? cx.lineTo(x, y) : cx.moveTo(x, y); }
-    cx.stroke();
-    tx.restore();
   }
   // solda: frisos horizontais (mais fosco) + serrilha recortada
   for (const top of [true, false]) {
     const y0 = top ? 0 : h - sealPx;
     for (let y = y0 + 6; y < y0 + sealPx - 4; y += 9) {
-      cx.fillStyle = 'rgba(205,200,190,0.55)'; cx.fillRect(0, y, w, 3);
+      cx.fillStyle = 'rgba(225,220,210,0.6)'; cx.fillRect(0, y, w, 3); tx.fillStyle = '#9a9a9a'; tx.fillRect(0, y, w, 3);
       rx.fillStyle = '#8a8a8a'; rx.fillRect(0, y, w, 4);
     }
     ax.fillStyle = '#000000';
@@ -263,7 +257,7 @@ export function criarCompartilhado(renderer, cookieTexUrl) {
   const labelFGeo = surfaceGeometry(1, u0, u1, v0, v1, 50, 82, 0.0011, (u, v) => [(u - u0) / (u1 - u0), (v - v0) / (v1 - v0)]);
   const labelBGeo = surfaceGeometry(-1, u0, u1, v0, v1, 50, 82, 0.0011, (u, v) => [(u1 - u) / (u1 - u0), (v - v0) / (v1 - v0)]);
   const ct = new THREE.TextureLoader().load(cookieTexUrl); ct.colorSpace = THREE.SRGBColorSpace; ct.anisotropy = 4;
-  const cookieMat = new THREE.MeshStandardMaterial({ map: ct, bumpMap: ct, bumpScale: 1.4, roughness: 0.92, metalness: 0, color: 0xffffff });
+  const cookieMat = new THREE.MeshStandardMaterial({ map: ct, bumpMap: ct, bumpScale: 2.2, roughness: 0.95, metalness: 0, color: 0xe2c08c, envMapIntensity: 0.6 });
   return { film, frontGeo, backGeo, labelFGeo, labelBGeo, cookieGeo: cookieGeometry(), cookieMat };
 }
 
@@ -280,12 +274,13 @@ export class Palco {
     const pm = new THREE.PMREMGenerator(r);
     scene.environment = pm.fromScene(new RoomEnvironment(r), 0.035).texture;
     const cam = this.camera = new THREE.PerspectiveCamera(30, 1, 0.01, 20);
-    cam.position.set(0.0, 0.03, 0.78);
+    cam.position.set(0.24, 0.05, 0.68);
     const key = new THREE.DirectionalLight(0xfff1dc, 2.4); key.position.set(-0.6, 0.9, 1.0); key.castShadow = true;
     key.shadow.mapSize.set(1024, 1024); key.shadow.camera.left = key.shadow.camera.bottom = -0.4; key.shadow.camera.right = key.shadow.camera.top = 0.4; key.shadow.bias = -0.0004;
     scene.add(key);
     const rim = new THREE.DirectionalLight(0xffe2b0, 1.6); rim.position.set(0.7, 0.5, -0.9); scene.add(rim);
     scene.add(new THREE.HemisphereLight(0xfff8ef, 0x3a2a1c, 0.55));
+    const topo = new THREE.DirectionalLight(0xffffff, 1.1); topo.position.set(0.25, 1.3, 0.35); scene.add(topo);
     const ctl = this.controls = new OrbitControls(cam, canvas);
     ctl.enableDamping = true; ctl.dampingFactor = 0.07; ctl.enablePan = false;
     ctl.minDistance = 0.32; ctl.maxDistance = 4.5; ctl.minPolarAngle = Math.PI * 0.18; ctl.maxPolarAngle = Math.PI * 0.82;
@@ -342,11 +337,12 @@ export class Palco {
     this.sombra.scale.set(n === 1 ? 1 : cols * 0.55, 1, n === 1 ? 1 : 1.6);
     this.layout = { cols, rows, n };
     this.irPara(this.distancia(), n === 1 ? null : 0);
+    this._primeira = false;
   }
   distancia() {
     const { cols = 1, rows = 1 } = this.layout || {};
     const vt = Math.tan(THREE.MathUtils.degToRad(this.camera.fov / 2));
-    const hw = cols === 1 ? 0.13 : cols * 0.205 / 2 + 0.06, hh = rows === 1 ? 0.2 : rows * 0.31 / 2 + 0.05;
+    const hw = cols === 1 ? 0.12 : cols * 0.205 / 2 + 0.06, hh = rows === 1 ? 0.185 : rows * 0.31 / 2 + 0.05;
     return Math.max(hh / vt, hw / (vt * this.camera.aspect)) * 1.04;
   }
   irPara(dist, azimute) {

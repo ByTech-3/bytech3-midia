@@ -1,0 +1,97 @@
+<title>Sequilhos Velomed</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Três nomes para o sequilho sem glúten e sem lactose da Velomed. Toque em um nome para ver a proposta completa.">
+<meta property="og:title" content="Sequilhos Velomed · três nomes para escolher">
+<meta property="og:description" content="Toque em um nome para ver o pacote em 3D, os rótulos dos 6 sabores e a ficha da gráfica.">
+<meta property="og:image" content="img/og.jpg">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Barlow:wght@400;500&display=swap">
+<style>
+/* Layout: palco de estúdio escuro, três nomes lado a lado (empilhados no celular), cada um é o próprio botão. */
+:root {
+  --chocolate: #24130A;
+  --cacau: #4A2412;
+  --mel: #F7B500;
+  --papel: #FCF6E8;
+  --papel-2: rgba(252, 246, 232, 0.66);
+  --borda: rgba(252, 246, 232, 0.14);
+  --f-rotulo: 'Barlow Condensed', 'Arial Narrow', 'Roboto Condensed', sans-serif;
+  --f-texto: 'Barlow', 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+[hidden] { display: none !important; }
+html, body { height: 100%; }
+body { margin: 0; background: var(--chocolate); color: var(--papel); font: 400 17px/1.5 var(--f-texto); -webkit-font-smoothing: antialiased; }
+img { max-width: 100%; height: auto; display: block; }
+.entrada {
+  position: relative; min-height: 100%; overflow: hidden;
+  display: flex; flex-direction: column; align-items: center; justify-content: center; gap: clamp(28px, 5vw, 56px);
+  padding-block: clamp(40px, 7vh, 80px);
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px));
+  text-align: center;
+}
+.entrada::before {
+  content: ""; position: absolute; inset: 0; pointer-events: none;
+  background:
+    radial-gradient(55% 60% at 50% 45%, rgba(255, 226, 176, 0.20), transparent 70%),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120' viewBox='0 0 120 120'%3E%3Cg fill='none' stroke='%23FCF6E8' stroke-width='2' stroke-linecap='round' opacity='0.045'%3E%3Ccircle cx='30' cy='30' r='17'/%3E%3Cpath d='M21 24l18 0M19 30l22 0M21 36l18 0'/%3E%3Ccircle cx='90' cy='90' r='17'/%3E%3Cpath d='M84 79l12 22M78 82l12 22M90 77l12 22'/%3E%3C/g%3E%3C/svg%3E");
+}
+.topo, .opcoes, .rodape { position: relative; }
+.eyebrow { font: 700 13px var(--f-rotulo); letter-spacing: 0.16em; text-transform: uppercase; color: var(--papel-2); }
+.instrucao { margin: 10px 0 0; font: 700 clamp(22px, 3.2vw, 32px)/1.15 var(--f-rotulo); letter-spacing: 0.02em; text-transform: uppercase; text-wrap: balance; }
+.opcoes { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: clamp(14px, 2.6vw, 32px); width: min(1180px, 100%); }
+.opcao {
+  display: flex; flex-direction: column; align-items: center; justify-content: space-between; gap: 22px;
+  padding: clamp(26px, 4vw, 44px) 18px 24px; border-radius: 24px; min-width: 0;
+  color: inherit; text-decoration: none; background: rgba(252, 246, 232, 0.035); border: 1.5px solid var(--borda);
+  transition: transform 260ms cubic-bezier(.2, .8, .2, 1), background 200ms, border-color 200ms;
+}
+.opcao:hover { transform: translateY(-6px); background: rgba(252, 246, 232, 0.07); border-color: var(--mel); }
+.opcao:focus-visible { outline: 3px solid var(--mel); outline-offset: 4px; }
+.opcao { --logo-h: clamp(120px, 15vw, 180px); }
+.opcao .logo { height: var(--logo-h); width: 100%; display: grid; place-items: center; }
+.opcao .logo img { max-height: var(--logo-h); width: auto; max-width: 100%; filter: drop-shadow(0 16px 26px rgba(0, 0, 0, 0.45)); animation: flutua 5.5s ease-in-out infinite; }
+.opcao:nth-child(2) .logo img { animation-delay: -1.8s; }
+.opcao:nth-child(3) .logo img { animation-delay: -3.6s; }
+.ver {
+  display: inline-flex; align-items: center; gap: 8px; padding: 10px 18px; border-radius: 999px; min-height: 42px;
+  background: var(--mel); color: var(--chocolate); font: 800 15px var(--f-rotulo); letter-spacing: 0.08em; text-transform: uppercase;
+  transition: background 200ms;
+}
+.ver svg { width: 16px; height: 16px; transition: transform 200ms; }
+.opcao:hover .ver { background: #fff; }
+.opcao:hover .ver svg { transform: translateX(3px); }
+.rodape { margin: 0; font: 600 13px var(--f-rotulo); letter-spacing: 0.1em; text-transform: uppercase; color: rgba(252, 246, 232, 0.42); }
+@keyframes flutua { 0%, 100% { transform: translateY(0) rotate(-1.2deg); } 50% { transform: translateY(-9px) rotate(1deg); } }
+@media (max-width: 760px) {
+  .opcoes { grid-template-columns: 1fr; width: min(460px, 100%); }
+  .opcao { padding-block: 24px 20px; gap: 16px; }
+  .opcao { --logo-h: 108px; }
+}
+@media (prefers-reduced-motion: reduce) { .opcao .logo img { animation: none; } .opcao, .ver, .ver svg { transition: none; } }
+</style>
+
+<main class="entrada">
+  <div class="topo">
+    <span class="eyebrow">Sequilhos Velomed · proposta de marca</span>
+    <p class="instrucao">Toque em um nome para ver a proposta completa</p>
+  </div>
+  <nav class="opcoes" aria-label="Opções de nome para os sequilhos">
+    <a class="opcao" href="bom-xodo.html" aria-label="Bom Xodó: ver a proposta completa">
+      <span class="logo"><img src="img/logos/bom-xodo-com-halo.svg" alt="Bom Xodó" width="300" height="171"></span>
+      <span class="ver">Ver proposta <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+    </a>
+    <a class="opcao" href="selinho.html" aria-label="Selinho: ver a proposta completa">
+      <span class="logo"><img src="img/logos/selinho-com-halo.svg" alt="Selinho" width="300" height="112"></span>
+      <span class="ver">Ver proposta <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+    </a>
+    <a class="opcao" href="mordisco.html" aria-label="Mordisco: ver a proposta completa">
+      <span class="logo"><img src="img/logos/mordisco-com-halo.svg" alt="Mordisco" width="300" height="98"></span>
+      <span class="ver">Ver proposta <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+    </a>
+  </nav>
+  <p class="rodape">ByTech3 para Velomed · novembro de 2026</p>
+</main>

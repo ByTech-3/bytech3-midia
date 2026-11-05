@@ -1,9 +1,15 @@
-<title>Rotas Sequilhos Velomed</title>
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<link rel="icon" href="img/logos/mordisco.svg" type="image/svg+xml">
+<title>Sequilhos Mordisco</title>
 <meta name="claude:viewport-fit-sides" content="cover">
 <meta name="description" content="Proposta de marca para os sequilhos sem glúten e sem lactose da Velomed: estudo, três nomes, rótulos prontos para a gráfica e visualização 3D.">
-<meta property="og:title" content="Sequilhos Bom Xodó · proposta de marca Velomed">
+<meta property="og:title" content="Sequilhos Mordisco · proposta de marca Velomed">
 <meta property="og:description" content="O sequilho que o cliente já conhece, com nome novo e a mesma receita. Gire o pacote em 3D, veja os 6 sabores e a ficha para a gráfica.">
-<meta property="og:image" content="img/og.jpg">
+<meta property="og:image" content="https://sequilhos-bom-xodo.vercel.app/img/og-mordisco.jpg">
 <meta property="og:type" content="website">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -54,6 +60,8 @@ section.bloco { padding-block: clamp(56px, 8vw, 96px); border-top: 1px solid var
 .controles { grid-area: ctl; position: relative; z-index: 2; align-self: start; padding-bottom: 40px; min-width: 0; }
 .cena { grid-area: cena; }
 .palco-texto .eyebrow { color: rgba(255, 248, 236, 0.72); }
+.voltar { align-self: flex-start; display: inline-flex; align-items: center; gap: 8px; padding: 8px 14px; border: 1.5px solid rgba(255, 248, 236, 0.32); border-radius: 999px; color: #fff8ec; text-decoration: none; font: 700 13px var(--f-rotulo); letter-spacing: 0.1em; text-transform: uppercase; min-height: 38px; }
+.voltar:hover { background: rgba(255, 248, 236, 0.1); border-color: #fff8ec; }
 .marca-hero { width: min(300px, 78%); filter: drop-shadow(0 10px 22px rgba(0, 0, 0, 0.35)); transform: rotate(-2deg); }
 .palco-texto .lead { color: rgba(255, 248, 236, 0.86); font-size: 18px; max-width: 34ch; }
 .cena { position: relative; min-width: 0; }
@@ -158,6 +166,15 @@ td strong { font-weight: 700; }
 .passos li { display: grid; grid-template-columns: 44px 1fr; gap: 14px; align-items: start; }
 .passos li::before { counter-increment: p; content: counter(p); font: 400 26px/44px var(--f-display); color: var(--mel); background: var(--cacau); width: 44px; height: 44px; border-radius: 50%; text-align: center; }
 .passos b { font: 800 18px var(--f-rotulo); text-transform: uppercase; letter-spacing: 0.04em; display: block; }
+.motivos { list-style: none; padding: 0; margin: 18px 0 22px; display: grid; gap: 10px; max-width: 60ch; }
+.motivos li { padding-left: 22px; position: relative; }
+.motivos li::before { content: ""; position: absolute; left: 0; top: 0.55em; width: 10px; height: 10px; border-radius: 50%; background: var(--beijo); }
+.vitrine { display: grid; gap: 14px; min-width: 0; }
+.vitrine > div { border-radius: 16px; display: grid; place-items: center; padding: clamp(24px, 5vw, 48px); }
+.vitrine-claro { background: var(--creme); }
+.vitrine-escuro { background: var(--chocolate); }
+.vitrine img { width: min(380px, 90%); height: auto; }
+.logos-dl { display: flex; flex-wrap: wrap; gap: 10px; }
 .pend-lista { columns: 2 320px; column-gap: 32px; padding-left: 20px; margin: 0; }
 .pend-lista li { break-inside: avoid; margin-bottom: 10px; }
 footer { background: var(--chocolate); color: rgba(255, 248, 236, 0.75); padding-block: 36px; font-size: 14px; }
@@ -183,22 +200,20 @@ footer .wrap { display: flex; flex-wrap: wrap; gap: 12px 28px; justify-content: 
 }
 @media (prefers-reduced-motion: reduce) { * { transition: none !important; } html { scroll-behavior: auto; } }
 </style>
-
+</head>
+<body>
 <header class="palco" id="palco" aria-label="Visualização 3D do pacote">
   <div class="palco-grade gutter wrap" style="max-width:1320px">
     <div class="palco-texto">
+      <a class="voltar" href="./"><span aria-hidden="true">←</span> Ver as três opções</a>
       <span class="eyebrow">Proposta de marca · Velomed + Delos · novembro de 2026</span>
-      <img class="marca-hero" id="marcaHero" src="img/logos/bom-xodo-com-halo.svg" alt="Bom Xodó" width="300" height="190">
+      <img class="marca-hero" id="marcaHero" src="img/logos/mordisco-com-halo.svg" alt="Mordisco" width="300" height="98">
       <p class="lead">O sequilho sem glúten e sem lactose que o cliente já procura na gôndola. Nome novo, mesma receita, mesma fábrica.</p>
     </div>
     <div class="controles" id="controles">
       <div>
         <div class="grupo-rotulo" id="lblSabor">Sabor</div>
         <div class="chips" id="chips" role="group" aria-labelledby="lblSabor"></div>
-      </div>
-      <div>
-        <div class="grupo-rotulo" id="lblNome">Nome</div>
-        <div class="seg" id="seg" role="group" aria-labelledby="lblNome"></div>
       </div>
       <div class="acoes">
         <button class="btn" id="btVerso" type="button"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12a9 9 0 0 1 15.5-6.2L21 8M21 3v5h-5M21 12a9 9 0 0 1-15.5 6.2L3 16M3 21v-5h5"/></svg>Ver o verso</button>
@@ -240,20 +255,33 @@ footer .wrap { display: flex; flex-wrap: wrap; gap: 12px 28px; justify-content: 
             <tr><td><strong>A bolinha vermelha no lugar do “o”</strong></td><td><span class="peso"><b class="on"></b><b class="on"></b><b class="on"></b><b class="on"></b><b></b></span></td><td>O “o” de “bom” é uma bola vermelha</td><td>Mantida como o “beijo” da marca, com brilho</td></tr>
             <tr><td><strong>Rótulo creme com cantos chanfrados</strong></td><td><span class="peso"><b class="on"></b><b class="on"></b><b class="on"></b><b></b><b></b></span></td><td>Creme com sequilhos em traço, ilustração do ingrediente</td><td>Mesmo formato e mesma ordem de leitura; ilustração nova com dois sequilhos</td></tr>
             <tr><td><strong>“SEQUILHOS” em letra grande</strong></td><td><span class="peso"><b class="on"></b><b class="on"></b><b class="on"></b><b></b><b></b></span></td><td>Condensada, na cor do sabor</td><td>Igual, maior e mais legível</td></tr>
-            <tr><td><strong>Nome da marca</strong></td><td><span class="peso"><b class="on"></b><b class="on"></b><b></b><b></b><b></b></span></td><td>Bom Beijo</td><td>Troca obrigatória. Rota recomendada: Bom Xodó, que mantém o “bom” e o ritmo de três sílabas</td></tr>
+            <tr><td><strong>Nome da marca</strong></td><td><span class="peso"><b class="on"></b><b class="on"></b><b></b><b></b><b></b></span></td><td>Bom Beijo</td><td>Troca obrigatória: <strong>Mordisco</strong>, a mordidinha que desmancha na boca, com a bolinha no mesmo lugar do “bom”</td></tr>
           </tbody>
         </table>
       </div>
     </div>
   </section>
 
-  <section class="bloco gutter" id="nomes" style="background:#fff">
-    <div class="wrap">
-      <span class="eyebrow">Três caminhos de nome</span>
-      <h2>Um nome que soa como carinho, com a bolinha vermelha no centro</h2>
-      <p class="lead">As três rotas usam o mesmo sistema visual e mudam só o grau de parentesco com o nome antigo. Quanto mais parecido, mais fácil para o cliente e mais importante a liberação por escrito da Delos e a busca no INPI.</p>
-      <div class="rotas" id="rotas"></div>
-      <p style="margin-top:22px;font-size:15px;color:var(--tinta-2)">Os três nomes precisam de busca de anterioridade no INPI (classe 30, biscoitos) antes da escolha final. A disponibilidade de registro não foi verificada nesta proposta.</p>
+  <section class="bloco gutter" id="marca" style="background:#fff">
+    <div class="wrap duas">
+      <div>
+        <span class="eyebrow">A marca nova</span>
+        <h2>Mordisco, a mordidinha que desmancha</h2>
+        <p class="lead">Mordisco é a mordidinha pequena, de quem prova devagar. É o jeito de comer sequilho: um de cada vez, desmanchando na boca. A bolinha vermelha fica no primeiro “o”, no mesmo lugar em que estava no “bom” do Bom Beijo.</p>
+        <ul class="motivos">
+          <li><strong>Fala do produto.</strong> O nome conta como é comer sequilho: aos pouquinhos, derretendo na boca.</li>
+          <li><strong>Diferente de tudo na gôndola.</strong> Divertido, fácil de lembrar e longe do nome antigo, o que simplifica a conversa com a Delos.</li>
+          <li><strong>A bolinha no mesmo lugar.</strong> O “o” vermelho continua na segunda letra, como no “bom” do letreiro antigo.</li>
+        </ul>
+        <div class="logos-dl">
+          <a class="dl" id="dlLogoPdf" href="img/logos/mordisco.pdf" target="_blank" rel="noopener" style="--c:var(--mel)"><i></i><span>Logo · PDF vetorial CMYK</span><small>PDF</small></a>
+          <a class="dl" id="dlLogoSvg" href="img/logos/mordisco.svg" target="_blank" rel="noopener" style="--c:var(--beijo)"><i></i><span>Logo · SVG para web</span><small>SVG</small></a>
+        </div>
+      </div>
+      <div class="vitrine">
+        <div class="vitrine-claro"><img src="img/logos/mordisco.svg" alt="Logotipo Mordisco" width="380" height="106" loading="lazy"></div>
+        <div class="vitrine-escuro"><img src="img/logos/mordisco-com-halo.svg" alt="Logotipo Mordisco com contorno creme, para fundos escuros" width="380" height="125" loading="lazy"></div>
+      </div>
     </div>
   </section>
 
@@ -267,13 +295,13 @@ footer .wrap { display: flex; flex-wrap: wrap; gap: 12px 28px; justify-content: 
       <div class="paleta" id="paletaSabores"></div>
       <h3>Tipografia</h3>
       <div class="tipos">
-        <div class="tipo"><span class="eyebrow">Letreiro da marca</span><div class="am" style="font-family:var(--f-display)">bom xodó</div><p style="font-size:14px;margin:0">Titan One, redesenhada em curvas com contorno, volume e a bolinha. Só no logotipo.</p></div>
+        <div class="tipo"><span class="eyebrow">Letreiro da marca</span><div class="am" style="font-family:var(--f-display)">mordisco</div><p style="font-size:14px;margin:0">Titan One, redesenhada em curvas com contorno, volume e a bolinha. Só no logotipo.</p></div>
         <div class="tipo"><span class="eyebrow">Títulos do rótulo</span><div class="am" style="font:800 34px/1.1 var(--f-rotulo);text-transform:uppercase">Sequilhos de coco</div><p style="font-size:14px;margin:0">Barlow Condensed Black e ExtraBold: denominação, sabor, peso.</p></div>
         <div class="tipo"><span class="eyebrow">Texto legal e tabela</span><div class="am" style="font:500 22px/1.3 Arial, var(--f-texto);color:var(--tinta)">Informação nutricional</div><p style="font-size:14px;margin:0">Barlow para ingredientes e origem; Arial (métrica) na tabela e Arial Narrow na lupa, como pede a IN 75/2020.</p></div>
       </div>
       <div class="anatomia">
         <figure>
-          <img id="anatomiaImg" src="tex/bom-xodo/coco-frente.webp" alt="Rótulo frontal do sabor coco com a numeração das partes" width="1100" height="1795" loading="lazy">
+          <img id="anatomiaImg" src="tex/mordisco/coco-frente.webp" alt="Rótulo frontal do sabor coco com a numeração das partes" width="1100" height="1795" loading="lazy">
           <span class="pino" style="left:31%;top:8%">1</span>
           <span class="pino" style="left:94%;top:10%">2</span>
           <span class="pino" style="left:4%;top:31%">3</span>
@@ -288,7 +316,7 @@ footer .wrap { display: flex; flex-wrap: wrap; gap: 12px 28px; justify-content: 
           <h3>Anatomia do rótulo frontal (95 × 155 mm)</h3>
           <ol class="legenda">
             <li><span><strong>Lupa “alto em açúcar adicionado”</strong> na metade de cima do painel, preta no branco, Arial Narrow negrito a 9,5 pt, 25 × 16 mm (2,8% do painel; o mínimo é 2%).</span></li>
-            <li><span><strong>Logotipo</strong> amarelo com contorno e volume marrons e a bolinha vermelha, inclinado 4°.</span></li>
+            <li><span><strong>Logotipo</strong> amarelo com contorno e volume marrons e a bolinha vermelha, levemente inclinado.</span></li>
             <li><span><strong>Denominação de venda</strong> “SEQUILHOS” + fita do sabor, na cor do sabor.</span></li>
             <li><span><strong>Selos “sem glúten” e “sem lactose”</strong> na metade de baixo, menores que a lupa (regra da RDC 429 para alegações).</span></li>
             <li><span><strong>Selo de transição “Nova marca, mesma receita”</strong>, só nos primeiros 6 meses.</span></li>
@@ -337,7 +365,7 @@ footer .wrap { display: flex; flex-wrap: wrap; gap: 12px 28px; justify-content: 
           </tbody>
         </table>
       </div>
-      <h3 style="margin-top:30px">Arquivos de impressão · rota Bom Xodó</h3>
+      <h3 style="margin-top:30px">Arquivos de impressão · Mordisco</h3>
       <div class="downloads" id="downloads"></div>
       <div class="aviso"><strong>Prova para aprovação.</strong> Os campos em magenta (CNPJ, razão social, endereço da Delos, licença sanitária, EAN) e os dados de ingredientes e tabela precisam vir da Delos antes da impressão. No site da Delos, Amendoim, Café e Leite Condensado aparecem com a mesma tabela e a mesma lista de ingredientes, e a lista não cita amendoim nem café.</div>
 
@@ -376,7 +404,7 @@ footer .wrap { display: flex; flex-wrap: wrap; gap: 12px 28px; justify-content: 
       <span class="eyebrow">Antes de ir para a gráfica</span>
       <h2>O que falta decidir ou receber</h2>
       <ul class="pend-lista">
-        <li><strong>Escolher o nome</strong> entre as três rotas, depois da busca no INPI.</li>
+        <li><strong>Registro do nome:</strong> busca de anterioridade de “Mordisco” no INPI (classe 30, biscoitos) e pedido de registro em nome da Velomed.</li>
         <li><strong>Autorização da Delos</strong> por escrito para manter cores, letreiro e bolinha, e para citar ou não o nome antigo na comunicação.</li>
         <li><strong>Ficha técnica oficial</strong> de cada sabor: ingredientes, alérgicos e tabela. No amendoim, se há amendoim na receita, o texto muda para “CONTÉM AMENDOIM”.</li>
         <li><strong>Transgênicos por sabor:</strong> o site não cita milho transgênico no maracujá. O rótulo traz o “T” em todos até a Delos confirmar.</li>
@@ -419,9 +447,9 @@ const ROTAS = [
     sentido: 'Selinho é o beijo rápido. Continua o significado do nome antigo sem repetir as palavras, e a bolinha vira o último “o”.',
     pros: ['Liga direto com “beijo” para quem já conhece', 'Nome curto, carinhoso e memorável', 'Combina com “selo”: abre espaço para selos de qualidade'],
     contras: ['Silhueta em uma linha: a logo muda mais de forma', 'Também precisa de busca no INPI'] },
-  { id: 'chamego', nome: 'Chamego', continuidade: 58, risco: 40,
-    sentido: 'Chamego é carinho, aconchego, café da tarde. Marca nova com o mesmo DNA visual, para quem quer mais distância do nome antigo.',
-    pros: ['Menos parecido com o nome antigo: conversa mais simples com a Delos', 'Bom para crescer em outras linhas (bolachas, biscoitos)', 'Palavra regional e calorosa'],
+  { id: 'mordisco', nome: 'Mordisco', continuidade: 60, risco: 40,
+    sentido: 'Mordisco é a mordidinha pequena: o jeito de comer sequilho, desmanchando na boca. A bolinha fica no primeiro “o”, como no “bom” antigo.',
+    pros: ['Fala do produto e da experiência de comer', 'Divertido e diferente de tudo na gôndola', 'Longe do nome antigo: conversa mais simples com a Delos'],
     contras: ['O cliente leva mais tempo para associar ao Bom Beijo', 'Depende mais do selo de transição e da comunicação'] },
 ];
 const MARCA = [
@@ -447,10 +475,13 @@ const CHECK = [
 ];
 
 const $ = (s) => document.querySelector(s);
-const estado = { sabor: 'coco', rota: 'bom-xodo', linha: false, lado: 'frente' };
+const estado = { sabor: 'coco', rota: 'mordisco', linha: false, lado: 'frente' };
 const tex = (rota, sabor, lado) => `tex/${rota}/${sabor}-${lado}.webp`;
-const SITE = 'https://velomed-sequilhos-bytech-3-projects.vercel.app/';
-const PDF_BASE = /vercel\.app$|^localhost$|^127\./.test(location.hostname) ? 'impressao/' : SITE + 'impressao/';
+const SITE = 'https://sequilhos-bom-xodo.vercel.app/';
+const BASE = /vercel\.app$|^localhost$|^127\./.test(location.hostname) ? '' : SITE;
+const PDF_BASE = BASE + 'impressao/';
+$('#dlLogoPdf').href = BASE + 'img/logos/mordisco.pdf';
+$('#dlLogoSvg').href = BASE + 'img/logos/mordisco.svg';
 
 // ----- interface
 const chips = $('#chips');
@@ -462,7 +493,7 @@ SABORES.forEach((s) => {
   chips.appendChild(b);
 });
 const seg = $('#seg');
-ROTAS.forEach((r) => {
+if (seg) ROTAS.forEach((r) => {
   const b = document.createElement('button');
   b.type = 'button'; b.dataset.id = r.id; b.setAttribute('aria-pressed', r.id === estado.rota);
   b.innerHTML = `${r.nome}${r.rec ? '<small>recomendado</small>' : '<small>&nbsp;</small>'}`;
@@ -471,7 +502,7 @@ ROTAS.forEach((r) => {
 });
 
 const rotas = $('#rotas');
-ROTAS.forEach((r) => {
+if (rotas) ROTAS.forEach((r) => {
   const el = document.createElement('article');
   el.className = 'rota' + (r.rec ? ' rec' : '');
   el.innerHTML = `${r.rec ? '<span class="selo-rec rec-tag">Recomendado</span>' : ''}
@@ -494,7 +525,7 @@ $('#paletaMarca').innerHTML = MARCA.map(corCard).join('');
 $('#paletaSabores').innerHTML = SABORES.map((s) => corCard({ nome: s.nomeLongo || s.nome, hex: s.cor, cmyk: s.cmyk })).join('');
 $('#checklist').innerHTML = CHECK.map(([a, b, c, s]) => `<tr><td><strong>${a}</strong></td><td>${b}</td><td style="font-size:14px;color:var(--tinta-2)">${c}</td><td><span class="status ${s}">${s === 'ok' ? 'Atendido' : 'Depende de dado'}</span></td></tr>`).join('');
 $('#downloads').innerHTML = SABORES.flatMap((s) => ['frente', 'verso'].map((l) =>
-  `<a class="dl" style="--c:${s.cor}" href="${PDF_BASE}bom-xodo-${s.id}-${l}.pdf" target="_blank" rel="noopener"><i></i><span>${s.nomeLongo || s.nome} · ${l}</span><small>PDF</small></a>`)).join('');
+  `<a class="dl" style="--c:${s.cor}" href="${PDF_BASE}mordisco-${s.id}-${l}.pdf" target="_blank" rel="noopener"><i></i><span>${s.nomeLongo || s.nome} · ${l}</span><small>PDF</small></a>`)).join('');
 
 function galeria() {
   $('#galeria').innerHTML = SABORES.map((s) => `<figure><img src="${tex(estado.rota, s.id, estado.lado)}" alt="Rótulo ${estado.lado} ${s.nomeLongo || s.nome}" loading="lazy" width="1100" height="1795"><figcaption style="--c:${s.cor}"><i></i>${s.nomeLongo || s.nome}</figcaption></figure>`).join('');
@@ -508,7 +539,7 @@ let palco = null;
 try {
   palco = new Palco($('#tela'), { cookieTex: 'img/sequilho-textura.jpg' });
 } catch (e) {
-  $('#carregando').innerHTML = `<img src="${tex('bom-xodo', 'coco', 'frente')}" alt="Rótulo frontal" style="max-height:80%;width:auto">`;
+  $('#carregando').innerHTML = `<img src="${tex('mordisco', 'coco', 'frente')}" alt="Rótulo frontal" style="max-height:80%;width:auto">`;
 }
 $('#btVerso').onclick = () => palco && palco.verso();
 $('#btLinha').onclick = () => { estado.linha = !estado.linha; atualizar(); };
@@ -539,3 +570,5 @@ async function atualizar() {
 }
 atualizar();
 </script>
+</body>
+</html>

@@ -122,6 +122,8 @@ Gerado por `tools/social/sincronizar_midia.py` (repositório `amuncios-venda`). 
 | 2026-11-08-20h-reel-senha-antiga | Reel | 1 | Por que o app nunca te mostra a sua senha antiga? | 🟨 aguardando ok | [instagram/2026-11/reels/2026-11-08-20h-reel-senha-antiga](instagram/2026-11/reels/2026-11-08-20h-reel-senha-antiga/reel.mp4) |
 | 2026-11-09-10h-estatico-estoque-diz-5 | Carrossel | 1 | "O sistema diz 5. A prateleira diz 0." | 🟨 aguardando ok | [instagram/2026-11/carrosseis/2026-11-09-10h-estatico-estoque-diz-5](instagram/2026-11/carrosseis/2026-11-09-10h-estatico-estoque-diz-5/folha.png) |
 | 2026-11-09-18h-black-friday-teste-agora | Carrossel | 7 | Carrossel "Black Friday em 18 dias. Sua loja aguenta?" | 🟨 aguardando ok | [instagram/2026-11/carrosseis/2026-11-09-18h-black-friday-teste-agora](instagram/2026-11/carrosseis/2026-11-09-18h-black-friday-teste-agora/folha.png) |
+| 2026-11-10-10h-estatico-cobra-um-por-um | Carrossel | 1 | "Ainda cobra cliente um por um?" | 🟨 aguardando ok | [instagram/2026-11/carrosseis/2026-11-10-10h-estatico-cobra-um-por-um](instagram/2026-11/carrosseis/2026-11-10-10h-estatico-cobra-um-por-um/folha.png) |
+| 2026-11-10-20h-reel-nota-sozinha | Reel | 1 | A nota chega sozinha no e-mail: quem emitiu? | 🟨 aguardando ok | [instagram/2026-11/reels/2026-11-10-20h-reel-nota-sozinha](instagram/2026-11/reels/2026-11-10-20h-reel-nota-sozinha/reel.mp4) |
 
 ## Anúncios (tráfego pago)
 

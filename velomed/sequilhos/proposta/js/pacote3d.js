@@ -265,7 +265,8 @@ export function criarCompartilhado(renderer, cookieTexUrl) {
 export class Palco {
   constructor(canvas, { cookieTex }) {
     const r = this.renderer = new THREE.WebGLRenderer({ canvas, antialias: true, alpha: true, powerPreference: 'high-performance' });
-    r.setPixelRatio(Math.min(window.devicePixelRatio || 1, 2));
+    this.toque = window.matchMedia('(pointer: coarse)').matches;
+    r.setPixelRatio(Math.min(window.devicePixelRatio || 1, this.toque ? 1.5 : 2));
     r.toneMapping = THREE.ACESFilmicToneMapping; r.toneMappingExposure = 0.95;
     r.outputColorSpace = THREE.SRGBColorSpace;
     r.shadowMap.enabled = true; r.shadowMap.type = THREE.PCFSoftShadowMap;
@@ -276,7 +277,7 @@ export class Palco {
     const cam = this.camera = new THREE.PerspectiveCamera(30, 1, 0.01, 20);
     cam.position.set(0.24, 0.05, 0.68);
     const key = new THREE.DirectionalLight(0xfff1dc, 2.4); key.position.set(-0.6, 0.9, 1.0); key.castShadow = true;
-    key.shadow.mapSize.set(1024, 1024); key.shadow.camera.left = key.shadow.camera.bottom = -0.4; key.shadow.camera.right = key.shadow.camera.top = 0.4; key.shadow.bias = -0.0004;
+    key.shadow.mapSize.set(this.toque ? 512 : 1024, this.toque ? 512 : 1024); key.shadow.camera.left = key.shadow.camera.bottom = -0.4; key.shadow.camera.right = key.shadow.camera.top = 0.4; key.shadow.bias = -0.0004;
     scene.add(key);
     const rim = new THREE.DirectionalLight(0xffe2b0, 1.6); rim.position.set(0.7, 0.5, -0.9); scene.add(rim);
     scene.add(new THREE.HemisphereLight(0xfff8ef, 0x3a2a1c, 0.55));
@@ -285,6 +286,7 @@ export class Palco {
     ctl.enableDamping = true; ctl.dampingFactor = 0.07; ctl.enablePan = false;
     ctl.minDistance = 0.32; ctl.maxDistance = 4.5; ctl.minPolarAngle = Math.PI * 0.18; ctl.maxPolarAngle = Math.PI * 0.82;
     ctl.autoRotate = true; ctl.autoRotateSpeed = 1.5; ctl.rotateSpeed = 0.8;
+    canvas.style.touchAction = 'pan-y'; // no celular, arrastar na vertical rola a página; na horizontal gira o pacote
     this.girar = true; this._idle = null;
     ctl.addEventListener('start', () => { ctl.autoRotate = false; clearTimeout(this._idle); this._tween = null; });
     ctl.addEventListener('end', () => { clearTimeout(this._idle); this._idle = setTimeout(() => { if (this.girar) ctl.autoRotate = true; }, 3500); });

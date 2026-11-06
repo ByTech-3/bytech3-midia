@@ -57,10 +57,11 @@ section.bloco { padding-block: clamp(56px, 8vw, 96px); border-top: 1px solid var
 .marca-hero { width: min(300px, 78%); filter: drop-shadow(0 10px 22px rgba(0, 0, 0, 0.35)); transform: rotate(-2deg); }
 .palco-texto .lead { color: rgba(255, 248, 236, 0.86); font-size: 18px; max-width: 34ch; }
 .cena { position: relative; min-width: 0; }
-.cena canvas { position: absolute; inset: 0; width: 100%; height: 100%; display: block; cursor: grab; touch-action: none; }
+.cena canvas { position: absolute; inset: 0; width: 100%; height: 100%; display: block; cursor: grab; touch-action: pan-y; }
 .cena canvas:active { cursor: grabbing; }
 .dica { position: absolute; right: 18px; bottom: 16px; z-index: 2; font: 600 13px var(--f-rotulo); letter-spacing: 0.08em; text-transform: uppercase; color: rgba(255, 248, 236, 0.66); display: flex; align-items: center; gap: 8px; pointer-events: none; }
 .dica svg { width: 22px; height: 22px; }
+.dica-curta { display: none; }
 .carregando { position: absolute; inset: 0; display: grid; place-items: center; font: 600 15px var(--f-rotulo); letter-spacing: 0.1em; text-transform: uppercase; color: rgba(255, 248, 236, 0.7); }
 .controles { display: grid; gap: 14px; }
 .grupo-rotulo { font: 700 12px var(--f-rotulo); letter-spacing: 0.14em; text-transform: uppercase; color: rgba(255, 248, 236, 0.62); margin-bottom: 7px; }
@@ -188,7 +189,22 @@ footer .wrap { display: flex; flex-wrap: wrap; gap: 12px 28px; justify-content: 
   body { font-size: 16px; }
   .galeria { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .downloads { grid-template-columns: 1fr; }
-  .dica { display: none; }
+  .dica { right: 50%; transform: translateX(50%); bottom: 10px; font-size: 12px; white-space: nowrap; }
+  .dica-longa { display: none; }
+  .dica-curta { display: inline; }
+}
+@media (max-width: 640px) {
+  .tabela-rolagem.empilhada { overflow: visible; border: 0; background: transparent; border-radius: 0; }
+  table.empilha, table.empilha tbody, table.empilha tr, table.empilha td { display: block; width: 100%; }
+  table.empilha thead { display: none; }
+  table.empilha tr { background: #fff; border: 1px solid var(--linha); border-radius: 12px; padding: 12px 14px; margin-bottom: 10px; }
+  table.empilha td { border: 0; padding: 4px 0; }
+  table.empilha td[data-label]:not(:first-child)::before { content: attr(data-label); display: block; font: 700 11px var(--f-rotulo); letter-spacing: 0.12em; text-transform: uppercase; color: var(--tinta-2); margin-top: 6px; }
+  table.empilha td:first-child { font-size: 16px; }
+  .spec, .spec tbody, .spec tr, .spec td { display: block; width: 100%; }
+  .spec tr { background: #fff; border: 1px solid var(--linha); border-radius: 12px; padding: 12px 14px; margin-bottom: 10px; }
+  .spec td { border: 0; padding: 2px 0; }
+  .spec td:first-child { white-space: normal; margin-bottom: 4px; }
 }
 @media (prefers-reduced-motion: reduce) { * { transition: none !important; } html { scroll-behavior: auto; } }
 </style>
@@ -214,7 +230,7 @@ footer .wrap { display: flex; flex-wrap: wrap; gap: 12px 28px; justify-content: 
     <div class="cena" id="cena">
       <canvas id="tela" aria-label="Pacote de sequilhos em 3D. Arraste para girar 360 graus."></canvas>
       <div class="carregando" id="carregando">Abrindo o pacote…</div>
-      <div class="dica"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3c-4 0-7 1.3-7 3s3 3 7 3 7-1.3 7-3-3-3-7-3z"/><path d="M5 6v12c0 1.7 3 3 7 3s7-1.3 7-3V6"/><path d="M9 14l3 3 3-3"/></svg>Arraste para girar 360° · pinça ou rolagem aproxima</div>
+      <div class="dica"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3c-4 0-7 1.3-7 3s3 3 7 3 7-1.3 7-3-3-3-7-3z"/><path d="M5 6v12c0 1.7 3 3 7 3s7-1.3 7-3V6"/><path d="M9 14l3 3 3-3"/></svg><span class="dica-longa">Arraste para girar 360° · pinça ou rolagem aproxima</span><span class="dica-curta">Arraste para os lados para girar</span></div>
     </div>
   </div>
 </header>
@@ -416,6 +432,21 @@ footer .wrap { display: flex; flex-wrap: wrap; gap: 12px 28px; justify-content: 
   </div>
 </footer>
 
+<script>
+// tabelas viram blocos empilhados no celular (roda mesmo se o 3D não carregar)
+window.empilhar = function () {
+  document.querySelectorAll('table').forEach((t) => {
+    const cab = [...t.querySelectorAll('thead th')].map((th) => th.textContent.trim());
+    if (cab.length) {
+      t.querySelectorAll('tbody tr').forEach((tr) => [...tr.children].forEach((td, i) => { td.dataset.label = cab[i] || ''; }));
+      t.classList.add('empilha');
+    }
+    const caixa = t.closest('.tabela-rolagem');
+    if (caixa && (cab.length || t.classList.contains('spec'))) caixa.classList.add('empilhada');
+  });
+};
+document.addEventListener('DOMContentLoaded', window.empilhar);
+</script>
 <script type="importmap">{ "imports": { "three": "./vendor/three.module.min.js" } }</script>
 <script type="module">
 import { Palco } from './js/pacote3d.js';
@@ -433,14 +464,10 @@ const ROTAS = [
     sentido: '“Xodó” é o queridinho da casa. Mantém o “bom”, a bolinha no mesmo “o” e o desenho em duas linhas do letreiro antigo.',
     pros: ['Na gôndola, o “bom” amarelo com a bolinha é lido como o mesmo produto', 'Mesmo ritmo de três sílabas: bom bei-jo, bom xo-dó', 'Fácil de pedir no balcão e no WhatsApp'],
     contras: ['Mais perto do original: precisa de autorização escrita da Delos', '“Xodó” é palavra comum em doces: risco de anterioridade no INPI'] },
-  { id: 'selinho', nome: 'Selinho', continuidade: 74, risco: 50,
-    sentido: 'Selinho é o beijo rápido. Continua o significado do nome antigo sem repetir as palavras, e a bolinha vira o último “o”.',
-    pros: ['Liga direto com “beijo” para quem já conhece', 'Nome curto, carinhoso e memorável', 'Combina com “selo”: abre espaço para selos de qualidade'],
-    contras: ['Silhueta em uma linha: a logo muda mais de forma', 'Também precisa de busca no INPI'] },
-  { id: 'mordisco', nome: 'Mordisco', continuidade: 60, risco: 40,
-    sentido: 'Mordisco é a mordidinha pequena: o jeito de comer sequilho, desmanchando na boca. A bolinha fica no primeiro “o”, como no “bom” antigo.',
-    pros: ['Fala do produto e da experiência de comer', 'Divertido e diferente de tudo na gôndola', 'Longe do nome antigo: conversa mais simples com a Delos'],
-    contras: ['O cliente leva mais tempo para associar ao Bom Beijo', 'Depende mais do selo de transição e da comunicação'] },
+  { id: 'beijinho', nome: 'Beijinho', continuidade: 95, risco: 80,
+    sentido: 'Beijinho é o beijo no diminutivo: quem conhece o Bom Beijo reconhece na hora. A bolinha vermelha vira o último “o”.',
+    pros: ['Ligação imediata com o nome antigo', 'Do tamanho do produto: um biscoito pequeno', 'Carinhoso e fácil de pedir'],
+    contras: ['Muito perto do nome antigo: precisa de autorização escrita da Delos', '“Beijinho” também é o docinho de coco: risco de anterioridade no INPI'] },
 ];
 const MARCA = [
   { nome: 'Amarelo da logo', hex: '#F7B500', cmyk: '0 28 100 0' },
@@ -523,6 +550,7 @@ function galeria() {
 $('#abaFrente').onclick = () => { estado.lado = 'frente'; $('#abaFrente').setAttribute('aria-pressed', true); $('#abaVerso').setAttribute('aria-pressed', false); galeria(); };
 $('#abaVerso').onclick = () => { estado.lado = 'verso'; $('#abaVerso').setAttribute('aria-pressed', true); $('#abaFrente').setAttribute('aria-pressed', false); galeria(); };
 galeria();
+window.empilhar && window.empilhar();
 
 // ----- 3D
 let palco = null;

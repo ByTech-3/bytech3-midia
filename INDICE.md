@@ -124,6 +124,8 @@ Gerado por `tools/social/sincronizar_midia.py` (repositório `amuncios-venda`). 
 | 2026-11-09-18h-black-friday-teste-agora | Carrossel | 7 | Carrossel "Black Friday em 18 dias. Sua loja aguenta?" | 🟨 aguardando ok | [instagram/2026-11/carrosseis/2026-11-09-18h-black-friday-teste-agora](instagram/2026-11/carrosseis/2026-11-09-18h-black-friday-teste-agora/folha.png) |
 | 2026-11-10-10h-estatico-cobra-um-por-um | Carrossel | 1 | "Ainda cobra cliente um por um?" | 🟨 aguardando ok | [instagram/2026-11/carrosseis/2026-11-10-10h-estatico-cobra-um-por-um](instagram/2026-11/carrosseis/2026-11-10-10h-estatico-cobra-um-por-um/folha.png) |
 | 2026-11-10-20h-reel-nota-sozinha | Reel | 1 | A nota chega sozinha no e-mail: quem emitiu? | 🟨 aguardando ok | [instagram/2026-11/reels/2026-11-10-20h-reel-nota-sozinha](instagram/2026-11/reels/2026-11-10-20h-reel-nota-sozinha/reel.mp4) |
+| 2026-11-11-10h-primeira-tela-do-site | Carrossel | 7 | Carrossel "Seu cliente abriu o site. O que ele vê primeiro?" | 🟨 aguardando ok | [instagram/2026-11/carrosseis/2026-11-11-10h-primeira-tela-do-site](instagram/2026-11/carrosseis/2026-11-11-10h-primeira-tela-do-site/folha.png) |
+| 2026-11-11-18h-estatico-botao-whatsapp | Carrossel | 1 | "O botão do WhatsApp do seu site funciona?" | 🟨 aguardando ok | [instagram/2026-11/carrosseis/2026-11-11-18h-estatico-botao-whatsapp](instagram/2026-11/carrosseis/2026-11-11-18h-estatico-botao-whatsapp/folha.png) |
 
 ## Anúncios (tráfego pago)
 

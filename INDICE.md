@@ -149,6 +149,8 @@ Gerado por `tools/social/sincronizar_midia.py` (repositório `amuncios-venda`). 
 | 2026-10-maxilaudo-parceria-lojistas | v4-noticia | Motion | voz, 9x16 | [anuncios/2026-10-maxilaudo-parceria-lojistas/motion/v4-noticia](anuncios/2026-10-maxilaudo-parceria-lojistas/motion/v4-noticia) |
 | 2026-10-site-200-wpp | carrossel-01 | Estático | 9 cards | [anuncios/2026-10-site-200-wpp/estaticos/carrossel-01](anuncios/2026-10-site-200-wpp/estaticos/carrossel-01) |
 | 2026-10-site-200-wpp | filme-01 | Motion | 4x5, 9x16 | [anuncios/2026-10-site-200-wpp/motion/filme-01](anuncios/2026-10-site-200-wpp/motion/filme-01) |
+| 2026-11-site-199-wpp | carrossel-01 | Estático | 6 cards | [anuncios/2026-11-site-199-wpp/estaticos/carrossel-01](anuncios/2026-11-site-199-wpp/estaticos/carrossel-01) |
+| 2026-11-site-199-wpp | estaticos | Estático | 4 cards | [anuncios/2026-11-site-199-wpp/estaticos/estaticos](anuncios/2026-11-site-199-wpp/estaticos/estaticos) |
 
 ## Marca
 
